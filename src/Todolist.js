@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
-import Lists from './Lists'
+import Lists from './Lists';
+
 
 const Todo = () =>{
 
@@ -32,10 +33,12 @@ const deleteItems =(id)=>{
         <div className="main_div">
             <div className="center_div">
               <br/>
-              <h1> Todo List </h1>
+              <h1 className="bt1"> <span></span><span></span><span></span><span></span>Todo List </h1>
               <br/>
-              <input type="text" placeholder="Add a Item" value={inputList} onChange={itemEvent}/>
-              <button onClick={listofitems}> + </button>
+               <br/>
+                <br/>
+              <input  className="bt1" type="text" placeholder="Add a Item" value={inputList} onChange={itemEvent}/>
+              <button className="bt1" onClick={listofitems}><span></span><span></span><span></span> <span></span> + </button>
 
               <ol>
              

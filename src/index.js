@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Todo from './Todolist';
+import Incredecre from './Incredecre';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Todo />, document.getElementById('root'));
+ReactDOM.render(<>
+<Todo/ >
+<Incredecre />
+</>
+, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
